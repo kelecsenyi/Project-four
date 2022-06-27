@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --white:#ffff;
+    --background:#F8F8F8;
+    --contact-bg:#F8F8FF;
+    --black:#181818;
+    --red:rgb(207, 27, 27);
+}
+
+body{
+    font-family: 'Poppins',sans-serif !important;
+    background-color: var(--background);
+    overflow: unset;
+}
+
+
+/* -----===== HEADER =====----- */
+.bg-header {
+    background-color:var(--black) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active{
+    color: var(--red);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--white);
+}
+
+/* -----===== MAIN =====----- */
+
+.img-full{
+    height: 95vh;
+    background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('../background.png') no-repeat center center;
+    background-size: cover;
+}
+
+.shadow-light{
+    box-shadow: 0 .5rem 2rem rgba(255, 255, 255, 0.25);
+}
+
+.shadow-light:hover{
+    background-color:  rgba(207, 27, 27, 0.75) !important;
+}
+
+.hr{
+    height:2px!important;
+    color: var(--red);
+    background-color: var(--red);
+    margin: 0 1rem;
+}
+
+.contact{
+    background-color: var(--contact-bg) !important;
+}
+
+.aboutus{
+    background-color: #faf7e7 !important;
+}
+
+/*---===== FadeIn =====--- */
+.fadeInBottom{
+    opacity: 0;
+    transform: translateY(+50px);
+    transition: transform .9s ease-in;
+}
+
+.fadeInBottom.appear{
+    opacity: 1;
+    transform: translateY(0);
+}
+/*---===== FadeIn Over =====--- */
